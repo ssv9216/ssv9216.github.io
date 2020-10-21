@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="newMain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
+}
+.main{
+
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #204969;
+    
+    justify-content: center;
+}
+.profileImage{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 10px ridge #204969;
+    border-style: ridge;
+}
+.profile{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.profile h3{
+    text-align: center;
+    color: #fff7f7;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.socialIcons img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff7f7;
+    margin: 10px;
+    box-shadow: #ffffff21 0px 0px 7px 2px;
+}
+.mySkills{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: radial-gradient(#fff7f7, #dadada);
+    box-shadow: rgba(2, 2, 2, 0.144) 0px 3px 10px 0px;
+
+
+}
+.card h3{
+    text-align: center;
+    font-size: 100%;
+    align-self: center;
+    margin-top: 10px;
+    color: #204969;
+    text-transform: uppercase;
+    font-size: 130%;
+}
+
+.insideCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+.insideCard div{
+    
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+
+.insideCard div ul li{
+    display: block;
+    text-decoration: none;
+    color: #204969;
+    margin: 5px;
+    font-size: 120%;
+    box-sizing: border-box;
+}
+.insideCard div h4{
+    background: #204969;
+    color: #dadada;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.about{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutCard{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-content: center;
+    background: radial-gradient(#fff7f7, #dadada);
+    margin: 10%;
+    padding: 10%;
+    box-shadow: rgba(2, 2, 2, 0.144) 0px 3px 10px 0px;
+
+}
+
+.aboutCard h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #204969;
+    margin: 10px;
+}
+.aboutCard p{
+    color: #204969;
+}
+  </style>
+    <div class="main">
+    
+            <div class="profile">
+                <div class="profiel-image" height="100px" width="100px">
+                    <img src="data:image/jpeg;base64,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" alt="profile image" class="profileImage">
+                </div>
+                
+                <h3>VHORA MAHAMMADSOHAN SALIMBHAI</h3>
+                <div class="socialMedia">
+                
+                    <div class="socialIcons">
+                        <a href="https://www.linkedin.com/in/sohan-vhora-30aa74141/"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-512.png" alt="linkedin" class="linkedin"></a>
+          <a href="https://instagram.com/vhorasohan_"><img src="http://www.clipartly.com/wp-content/uploads/2017/07/Instagram-Icon-Png-Clipart.png" alt="instagram" class="instagram"></a>
+          <a href="https://twitter.com/sohanvahora"><img src="http://www.clipartly.com/wp-content/uploads/2017/07/Twitter-Icon-Png-Clipart.png" alt="twitter" class="twitter"></a>
+          <a href="https://www.facebook.com/sohan.vahora"><img src="http://www.clipartly.com/wp-content/uploads/2017/07/Facebook-Icon-Png-Clipart.png" alt="facebook" class="facebook"></a>
+          <a href="https://github.com/ssv9216"><img src="https://pngimg.com/uploads/github/github_PNG84.png" alt="Github" class="github"></a>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="about">
+                <div class="aboutCard">
+                    <h3>About Me</h3>
+                    <p>I'M 21 YEAR OLD COMPUTER SCIENCE AND ENGINEERING STUDENT WITH SEVERAL APPLICATION DEVELOPED AND LIVING IN GUJARAT.
+                        I AM SELF TAUGHT DEVELOPER AND MAKE APPS
+                        I HAVE CREATED ANDROID APP FOR LOCAL BUISNESS</p>
+                </div>
+            </div>
+            <div class="mySkills">
+                <div class="card">
+                    <h3 class="title">
+                        My Skills
+                    </h3>
+                    <div class="insideCard">
+                        <div class="languages">
+                            <h4 class="title">Languages</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Kotlin</li>
+                                <li>Python</li>
+                                <li>Javascript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <div class="technology">
+                            <h4 class="techonology">Technology</h4>
+                            <ul>
+                                <li>Android</li>
+                            </ul>
+                        </div>
+                        <div class="database">
+                            <h4 class="databases">Databases</h4>
+                            <ul>
+                                <li>Sql</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+                
+            
+    
+    </div>
+</body>
+</html>
