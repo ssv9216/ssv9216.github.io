@@ -24,6 +24,10 @@
     background: #204969;
     
     justify-content: center;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    
 }
 .profileImage{
     border-radius: 50%;
@@ -39,6 +43,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    scroll-snap-align : start;
     
 }
 .profile h3{
@@ -80,7 +85,7 @@
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    
+    scroll-snap-align : start;
 }
 .card{
     display: flex;
@@ -142,6 +147,7 @@
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    scroll-snap-align : start;
 }
 
 .aboutCard{
